@@ -1,0 +1,24 @@
+.container {
+    background-color: #D4DFE1;
+    height: 100vh;
+}
+
+div {
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+}
+h1 {
+    margin-left: 0.5em;
+    font-weight:initial;
+}
+h2 {
+    margin-left: 0.4em;
+    color: #154194;
+}
