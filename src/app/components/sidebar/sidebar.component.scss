@@ -1,5 +1,7 @@
+@import '/src/styles.scss';
+
 .container {
-    background-color: #D4DFE1;
+    background-color: $secondary-color;
     height: 100vh;
 }
 
@@ -21,5 +23,5 @@ h1 {
 }
 h2 {
     margin-left: 0.4em;
-    color: #154194;
+    color: $tertiary-color;
 }

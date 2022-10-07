@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #BACFD4;
+$secondary-color: #D4DFE1;
+$tertiary-color: #154194;
+$white-color: #fff;
+$black-color: #000;
 
 body, html {
     margin: 0;
@@ -31,16 +36,16 @@ body, html {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .main-screen {
-      margin-left: 250px;
+      margin-left: 15vw;
     }
 }
   @media screen and (min-width: 992px) {
     .main-screen {
-      margin-left: 250px;
+      margin-left: 15vw;
     }
     .sidebar {
       height: 100%;
-      width: 250px;
+      width: 15vw;
       position: absolute;
       z-index: 2;
     }

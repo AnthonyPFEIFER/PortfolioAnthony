@@ -18,13 +18,13 @@
     J'apprécie de travailler seul ou en collaboration avec une équipe autour de projets innovants.
             </p>
             <div class="links-social">
-                <a href="#" ><fa-icon class="fa-xl" [icon]="faLinkedin"></fa-icon> LinkedIn </a>
-                <a href="#"> <fa-icon class="fa-xl" [icon]="faGithub"></fa-icon> Github </a>
-                <a href="#"> anthhony.pfeifer@gmail.com </a>
+                <a href="https://www.linkedin.com/in/anthony-pfeifer-9568b6168/" ><fa-icon class="fa-xl" [icon]="faLinkedin"></fa-icon> LinkedIn </a>
+                <a href="https://github.com/AnthonyPFEIFER"> <fa-icon class="fa-xl" [icon]="faGithub"></fa-icon> Github </a>
+                <a href="mailto:anthhony.pfeifer@gmail.com"> anthhony.pfeifer@gmail.com </a>
             </div>
             </article>
             <aside id="my-picture">
-                <img [src]="'assets/Anthony_pfeifer.jpg'" alt="Anthony Pfeifer"/>
+                    <img [src]="'assets/Anthony_pfeifer.jpg'" alt="Anthony Pfeifer"/>
             </aside>
         </div>
         <div id="links-bio-cv">
@@ -32,49 +32,99 @@
                 <div class="card">
                     <h2 class="card-title">Expériences professionnelles </h2>
                     <p class="card-see-more">
-                        <a class="card-link" href="#"> En savoir plus</a>
+                        <a class="card-link" [routerLink]="['/experiences']"> En savoir plus</a>
                     </p>
                 </div>
                 <div class="card">
                     <h2 class="card-title">Formations </h2>
                     <p class="card-see-more">
-                        <a class="card-link" href="#"> En savoir plus</a>
+                        <a class="card-link" [routerLink]="['/formations']"> En savoir plus</a>
                     </p>
                 </div>
                 <div class="card">
                     <h2 class="card-title">Technologies</h2>
                     <p class="card-see-more">
-                        <a class="card-link" href="#"> En savoir plus</a>
+                        <a class="card-link" [routerLink]="['/technologies']"> En savoir plus</a>
                     </p>
                 </div>
                 <div class="card">
                     <h2 class="card-title">Autres informations</h2>
                     <p class="card-see-more">
-                        <a class="card-link" href="#"> En savoir plus</a>
-                    </p>
-                </div>
-        </article>
-            <article id="download-cv-link">
-                <div class="buttons">
-                    <h3> Savoir être </h3>
-                    <p>
-
-                    </p>
-                    <h3> Centres d'intérêt </h3>
-                    <p>
-
-                    </p>
-                    <h3> Langues </h3>
-                    <p>
-
-                    </p>
-                    <h3> Mes projets </h3>
-                    <p>
-
+                        <a class="card-link" [routerLink]="['/informations']"> En savoir plus</a>
                     </p>
                 </div>
                 <div>
+                    <div class="container">
+
+                        <div class="card-button">
+                          <div class="face face1">
+                            <div class="content">
+                              <span class="stars"></span>
+                              <h2 class="title-card-button">Savoir être</h2>
+                                <ul class="title-card-button">
+                                    <li>Persévérant</li>
+                                    <li>Engagé</li>
+                                    <li>Sociable</li>
+                                    <li>Flexible</li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="face face2">
+                            <h2> Savoir être</h2>
+                          </div>
+                        </div>
+                      
+                        <div class="card-button">
+                          <div class="face face1">
+                            <div class="content">
+                                <span class="stars"></span>
+                                <h2 class="title-card-button">Centres d'intérêt</h2>
+                                <ul class="title-card-button">
+                                    <li>Jeux de rôle</li>
+                                    <li>Cuisine</li>
+                                    <li>Escalade</li>
+                                    <li>Lecture</li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="face face2">
+                            <h2>Centres d'intérêt</h2>
+                          </div>
+                        </div>
+                      
+                        <div class="card-button">
+                          <div class="face face1">
+                            <div class="content">
+                                <span class="stars"></span>
+                                <h2 class="title-card-button">Projets</h2>
+                                <ul class="title-card-button">
+                                    <li>
+                                        <a href="http://tour-of-kaamelot.byethost32.com/heroes" class="title-card-button">Tour of Heroes (Front + Back)</a>
+                                        <p> En solo </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://events.mistral.fr/#/login">Mistral Event (Front)</a>
+                                        <p> En équipe</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                          </div>
+                          <div class="face face2">
+                            <h2>Projets</h2>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        </article>
+            <article id="download-cv-link">
+                <div class="img-cv">
                     <img [src]="'assets/CV.png'" alt="CV">
+                    <div class="centered">
+                        <a href="./assets/CV_ Anthony_Pfeifer.pdf" download="CVAnthonyPfeifer">
+                            Télécharger mon CV    
+                        </a>
+                    </div>
                 </div>
         </article>
         </div>
