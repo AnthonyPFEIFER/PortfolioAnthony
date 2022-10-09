@@ -3,8 +3,14 @@
 <app-sidebar class="sidebar"></app-sidebar>
 
 
-    <main class="main-screen">
-
+    <main class="main-screen" [class.darkTheme]="isActive">
+        <div class="theme-switch-wrapper">
+            <h3>Dark mode</h3>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" (click)="toggleClass()" />
+                <div class="slider round"></div>
+            </label>
+        </div>
         <div id="presentation-my-picture">
             <article id="presentation">
                 <p id="bonjour">
@@ -12,11 +18,13 @@
                 </p>
                 <h1> Anthony Pfeifer</h1> 
                 <h2> Développeur Web</h2>
+
                 <p>    
                     Issu de la logistique, je me suis réorienté vers le Développement Web pour faire de
     cette passion mon métier. Je code tout autant sur le front-end que le back-end, grâce à mes connaissances en Angular, Spring et autres technologies.
     J'apprécie de travailler seul ou en collaboration avec une équipe autour de projets innovants.
             </p>
+            
             <div class="links-social">
                 <a href="https://www.linkedin.com/in/anthony-pfeifer-9568b6168/" ><fa-icon class="fa-xl" [icon]="faLinkedin"></fa-icon> LinkedIn </a>
                 <a href="https://github.com/AnthonyPFEIFER"> <fa-icon class="fa-xl" [icon]="faGithub"></fa-icon> Github </a>

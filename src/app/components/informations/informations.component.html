@@ -1,1 +1,20 @@
-<p>informations works!</p>
+<app-sidebar class="sidebar"></app-sidebar>
+<div class="main-screen">
+    <a [routerLink]="['/dashboard']"> Revenir à l'accueil</a>
+    <form action="https://api.web3forms.com/submit" method="POST" >
+        <div class="form-group">
+            <input type="hidden" name="access_key" value="bf38ebe7-b295-4aef-885c-529cd5b2e8fc">
+    
+            <label for="name">Votre nom</label>
+            <input class="form-control" type="text" id="name" name="name" required>
+            <label for="email">Votre email</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+            <label for="message">Votre message</label>
+            <textarea class="form-control" id="message" name="message" required></textarea>
+            <input type="hidden" name="redirect" value="http://localhost:4200/dashboard">
+    
+            <button type="submit">Submit Form</button>
+        </div>
+
+    </form>
+</div>

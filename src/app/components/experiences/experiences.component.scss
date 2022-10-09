@@ -1,0 +1,270 @@
+@import '/src/styles.scss';
+
+@media screen and (min-width: 200px) and (max-width: 375px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media screen and (min-width: 992px) {
+  .crossed {
+    background: linear-gradient(to right, skyblue 0%, hotpink 100%);
+
+  }
+  .arrow {
+    border: solid $tertiary-color;;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+/*     .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        .experience{
+            display: grid;
+            grid-template-rows: 1.25em 3.125em 1fr 3.125;
+            border: 5px solid red;
+            width: 40em;
+            .dates{
+
+            }
+            .entreprise{
+
+            }
+            .metier{
+
+            }
+            .description{
+
+            }
+        }
+    } */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      
+    }
+    .timelineArrow{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      i{
+        color: $tertiary-color;
+      }
+    }
+    .timelineArrow::after{
+      position: absolute;
+      width: 2px;
+      transform: rotate(-135deg);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      padding: 15px 0;
+      
+      .arrow {
+        border: solid $tertiary-color;
+        border-width: 0 3px 3px 0;
+ 
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        padding: 3px;
+      }
+    }
+    .timeline {
+      position: relative;
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 15px 0;
+    }
+    
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: $tertiary-color;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+    
+    .container {
+      padding: 15px 30px;
+      position: relative;
+      background: inherit;
+      width: 50%;
+    }
+    
+    .container.left {
+      left: 0;
+    }
+    
+    .container.right {
+      left: 50%;
+    }
+    
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: calc(50% - 8px);
+      right: -8px;
+      background: #ffffff;
+      border: 2px solid $tertiary-color;
+      border-radius: 16px;
+      z-index: 1;
+    }
+    
+    .container.right::after {
+      left: -8px;
+    }
+    
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      top: calc(50% - 1px);
+      right: 8px;
+      background: $tertiary-color;
+      z-index: 1;
+    }
+    
+    .container.right::before {
+      left: 8px;
+    }
+    
+    .container .date {
+      position: absolute;
+      display: inline-block;
+      top: calc(50% - 8px);
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: $tertiary-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 1;
+    }
+    
+    .container.left .date {
+      right: -18em;
+    }
+    
+    .container.right .date {
+      left: -19em;
+      text-align: end !important;
+    }
+    
+    .container .icon {
+      position: absolute;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      padding: 9px 0;
+      top: calc(50% - 20px);
+      background: $secondary-color;
+      border: 2px solid $tertiary-color;
+      border-radius: 40px;
+      text-align: center;
+      font-size: 18px;
+      color: $tertiary-color;
+      z-index: 1;
+    }
+    
+    .container.left .icon {
+      right: 56px;
+    }
+    
+    .container.right .icon {
+      left: 56px;
+    }
+    
+    .container .content {
+      padding: 30px 90px 30px 30px;
+      background: $primary-color;
+      position: relative;
+      border-radius: 0 500px 500px 0;
+    }
+    
+    .container.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+    }
+    
+    .container .content h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      font-weight: normal;
+      color: $tertiary-color;
+    }
+    
+    .container .content p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+    
+    @media (max-width: 767.98px) {
+      .timeline::after {
+        left: 90px;
+      }
+    
+      .container {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+      }
+    
+      .container.right {
+        left: 0%;
+      }
+    
+      .container.left::after, 
+      .container.right::after {
+        left: 82px;
+      }
+    
+      .container.left::before,
+      .container.right::before {
+        left: 100px;
+        border-color: transparent $tertiary-color transparent transparent;
+      }
+    
+      .container.left .date,
+      .container.right .date {
+        right: auto;
+        left: 15px;
+      }
+    
+      .container.left .icon,
+      .container.right .icon {
+        right: auto;
+        left: 146px;
+      }
+    
+      .container.left .content,
+      .container.right .content {
+        padding: 30px 30px 30px 90px;
+        border-radius: 500px 0 0 500px;
+      }
+    }
+}

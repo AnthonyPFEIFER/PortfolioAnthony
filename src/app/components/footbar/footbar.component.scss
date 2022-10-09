@@ -1,0 +1,21 @@
+@import '/src/styles.scss';
+
+nav{
+    position: fixed;
+    bottom: 0;
+    background-color: $primary-color;
+    height: 3em;
+    width: 100%;
+    z-index: 3;        
+    display: table-cell; 
+    vertical-align: middle;
+    div{
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

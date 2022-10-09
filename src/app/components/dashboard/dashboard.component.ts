@@ -14,9 +14,20 @@ export class DashboardComponent implements OnInit {
   faLinkedin = faLinkedin;
   faGithub = faGithub;
 
+  isActive = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+ 
 
+  toggleClass() {
+    if(this.isActive) {
+      this.isActive = false;
+    } else {
+      this.isActive = true;
+    }
+  }
 }
+
