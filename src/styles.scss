@@ -35,12 +35,15 @@ body, html {
 
 @media screen and (min-width: 320px) and (max-width: 480px) { // Mobile devices
     .main-screen {
-      padding-top: 0.625em;
-      padding-bottom: 3.75em;
+      width: 100%;
+
+    }
+    .sidebar{
+      width: 100%;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) { // iPads, Tablets
-  @include sizeSideMain(20vw, 100%, 20vw, absolute);
+  @include sizeSideMain(32vw, 100%, 32vw, absolute);
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) { // Small screens, laptops
   @include sizeSideMain(15vw, 100%, 15vw, absolute);

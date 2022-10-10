@@ -13,33 +13,57 @@
         }
     }
     h1 {
-        font-size: 1.64vw;
+        
         font-weight:initial;
     }
     h2 {
         color: $tertiary-color;
-        font-size: 1.5vw;
+        
     }
 }
 
-
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
+    #permis{
+        padding-bottom: 3em;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
         height: 100vh;
+    }
+    h1 {
+        margin-left: 0.5em;
+        font-size: 2.64vw;
+    }
+    h2 {
+        margin-left: 0.4em;
+        font-size: 2.5vw;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .container {
         height: 100vh;
     }
+    h1 {
+        margin-left: 0.5em;
+        font-size: 1.64vw;
+    }
+    h2 {
+        margin-left: 0.4em;
+        font-size: 1.5vw;
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .container {
         height: 100vh;
+    }
+    h1 {
+        margin-left: 0.5em;
+        font-size: 2.44vw;
+    }
+    h2 {
+        margin-left: 0.4em;
+        font-size: 2.5vw;
     }
 }
 @media screen and (min-width: 1201px) {
@@ -48,8 +72,10 @@
     }
     h1 {
         margin-left: 0.5em;
+        font-size: 1.5vw;
     }
     h2 {
         margin-left: 0.4em;
+        font-size: 1.5vw;
     }
 }
