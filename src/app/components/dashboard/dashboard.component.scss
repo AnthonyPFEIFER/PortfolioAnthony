@@ -16,6 +16,7 @@
     .card-link{
     //color: rgba($white-color, 0.9);
     color : $tertiary-color;
+    letter-spacing: 0.1em;
     }
     .card-link::after{
       background-color: $tertiary-color;

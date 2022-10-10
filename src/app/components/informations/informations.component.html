@@ -1,7 +1,7 @@
 <app-sidebar class="sidebar"></app-sidebar>
 <div class="main-screen">
-    <a [routerLink]="['/dashboard']"> Revenir à l'accueil</a>
-    <form action="https://api.web3forms.com/submit" method="POST" >
+    <a class="button" [routerLink]="['/dashboard']"> <fa-icon class="fa-xl" [icon]="faHome"></fa-icon>Revenir à l'accueil  </a>
+<!--     <form action="https://api.web3forms.com/submit" method="POST" >
         <div class="form-group">
             <input type="hidden" name="access_key" value="bf38ebe7-b295-4aef-885c-529cd5b2e8fc">
     
@@ -16,5 +16,15 @@
             <button type="submit">Submit Form</button>
         </div>
 
-    </form>
+    </form> -->
+
+    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <h2>Contactez moi pour plus d'informations</h2>
+        <input type="hidden" name="access_key" value="bf38ebe7-b295-4aef-885c-529cd5b2e8fc">
+        <p type="Nom:"><input class="form-control" type="text" id="name" name="name" required></p>
+        <p type="Email:"><input class="form-control" type="email" id="email" name="email" required></p>
+        <p type="Message:"><input class="form-control" id="message" name="message" required></p>
+        <input type="hidden" name="redirect" value="http://tour-of-kaamelot.byethost32.com/heroes">
+        <button>Envoyer votre message</button>
+      </form>
 </div>

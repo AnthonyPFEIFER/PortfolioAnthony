@@ -1,0 +1,97 @@
+@import '/src/styles.scss';
+
+@media screen and (min-width: 200px) and (max-width: 375px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media screen and (min-width: 992px) {
+
+  .main-screen{
+    a{
+      cursor: pointer;
+      background-color: $secondary-color;
+      position: absolute;
+      top: 1em;
+      right: 5em;
+      padding: 1em;
+      border-radius: 1.563em;
+      text-decoration: none;
+      color: $tertiary-color;
+      font-size: larger;
+      .fa-xl{
+        padding-right: 1em;
+      }
+    }
+  }
+  .form{
+    width: 25em;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+  }
+
+  h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width: 11em;
+    color: $tertiary-color;
+    border-bottom:3px solid $tertiary-color;
+  }
+  p{
+    font-weight: bold;
+  }
+  input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+  }
+  input:focus{
+    border-bottom:2px solid #78788c;
+  }
+  p:before{content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a;
+  }
+  button{float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+  }
+  button:hover{
+    background: $secondary-color;
+    color: $tertiary-color;
+  }
+
+  span{
+    margin:0 5px 0 15px;
+  }
+}

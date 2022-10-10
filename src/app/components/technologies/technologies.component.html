@@ -1,18 +1,56 @@
 <app-sidebar class="sidebar"></app-sidebar>
 <div class="main-screen">
     <h1>Technologies</h1>
-    <a [routerLink]="['/dashboard']"> Revenir à l'accueil</a>    
+    <a class="button" [routerLink]="['/dashboard']"> <fa-icon class="fa-xl" [icon]="faHome"></fa-icon>Revenir à l'accueil  </a>
     <div class="container">
-        <div class="">
-            <img class="img-techno" [src]="'assets/Angular.png'" alt="...">
-            <img class="img-techno" [src]="'assets/Cobol.png'" alt="...">
-            <img class="img-techno" [src]="'assets/CSS.png'" alt="...">
-            <img class="img-techno" [src]="'assets/html.png'" alt="...">
-            <img class="img-techno" [src]="'assets/javascript.png'" alt="...">
-            <img class="img-techno" [src]="'assets/mySQL.png'" alt="...">
-            <img class="img-techno" [src]="'assets/PHP.png'" alt="...">
-            <img class="img-techno" [src]="'assets/Symfony.png'" alt="...">
-            <img class="img-techno" [src]="'assets/WordPress.png'" alt="...">
+
+        <div class="cards-list">
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/html.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/CSS.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/javascript.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/Angular.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/mySQL.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/Java.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/Spring.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/PHP.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/Symfony.png'" alt="..." /> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/Cobol.png'" alt="..." /> 
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_image"> <img [src]="'assets/WordPress.png'" alt="..." /> 
+                </div>
+            </div>
+
         </div>
         <div class="langues">
             <h2> Langues </h2>
@@ -26,5 +64,5 @@
             </div>
         </div>
     </div>
-    
+
 </div>

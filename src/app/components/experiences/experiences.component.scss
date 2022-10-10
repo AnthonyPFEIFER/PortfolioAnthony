@@ -13,6 +13,28 @@
 
 }
 @media screen and (min-width: 992px) {
+
+  .main-screen{
+    h1{
+      padding-left: 1em;
+    }
+    a{
+      cursor: pointer;
+      background-color: $secondary-color;
+      position: absolute;
+      top: 1em;
+      right: 5em;
+      padding: 1em;
+      border-radius: 1.563em;
+      text-decoration: none;
+      color: $tertiary-color;
+      font-size: larger;
+      .fa-xl{
+        padding-right: 1em;
+      }
+    }
+  }
+
   .crossed {
     background: linear-gradient(to right, skyblue 0%, hotpink 100%);
 
@@ -28,31 +50,7 @@
     -webkit-transform: rotate(-135deg);
   }
 
-/*     .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        .experience{
-            display: grid;
-            grid-template-rows: 1.25em 3.125em 1fr 3.125;
-            border: 5px solid red;
-            width: 40em;
-            .dates{
 
-            }
-            .entreprise{
-
-            }
-            .metier{
-
-            }
-            .description{
-
-            }
-        }
-    } */
     *,
     *::before,
     *::after {
