@@ -1,122 +1,95 @@
 @import '/src/styles.scss';
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
 
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
-}
-@media screen and (min-width: 1201px) {
-
-  .main-screen{
-    h1{
-      padding-left: 1em;
+.main-screen{
+  h1{
+    padding-left: 1em;
+  }
+  a{
+    cursor: pointer;
+    background-color: $secondary-color;
+    position: absolute;
+    top: 1em;
+    right: 5em;
+    padding: 1em;
+    border-radius: 1.563em;
+    text-decoration: none;
+    color: $tertiary-color;
+    font-size: larger;
+    .fa-xl{
+      padding-right: 1em;
     }
-    a{
-      cursor: pointer;
-      background-color: $secondary-color;
-      position: absolute;
-      top: 1em;
-      right: 5em;
-      padding: 1em;
-      border-radius: 1.563em;
-      text-decoration: none;
+  }
+}
+
+.crossed {
+  background: linear-gradient(to right, skyblue 0%, hotpink 100%);
+
+}
+.arrow {
+  border: solid $tertiary-color;;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    
+  }
+  .timelineArrow{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    i{
       color: $tertiary-color;
-      font-size: larger;
-      .fa-xl{
-        padding-right: 1em;
-      }
     }
   }
-
-  .crossed {
-    background: linear-gradient(to right, skyblue 0%, hotpink 100%);
-
-  }
-  .arrow {
-    border: solid $tertiary-color;;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  .up {
+  .timelineArrow::after{
+    position: absolute;
+    width: 2px;
     transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    padding: 15px 0;
+    
+    .arrow {
+      border: solid $tertiary-color;
+      border-width: 0 3px 3px 0;
 
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      
-    }
-    .timelineArrow{
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      i{
-        color: $tertiary-color;
-      }
-    }
-    .timelineArrow::after{
-      position: absolute;
-      width: 2px;
       transform: rotate(-135deg);
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      padding: 15px 0;
-      
-      .arrow {
-        border: solid $tertiary-color;
-        border-width: 0 3px 3px 0;
- 
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-        padding: 3px;
-      }
+      -webkit-transform: rotate(-135deg);
+      padding: 3px;
     }
-    .timeline {
-      position: relative;
-      width: 100%;
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 15px 0;
-    }
-    
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 2px;
-      background: $tertiary-color;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -1px;
-    }
-    
+  }
+  .timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+
     .container {
       padding: 15px 30px;
       position: relative;
       background: inherit;
       width: 50%;
     }
-    
+      
     .container.left {
       left: 0;
     }
-    
     .container.right {
       left: 50%;
     }
-    
     .container::after {
       content: '';
       position: absolute;
@@ -129,7 +102,6 @@
       border-radius: 16px;
       z-index: 1;
     }
-    
     .container.right::after {
       left: -8px;
     }
@@ -220,49 +192,76 @@
       line-height: 22px;
       color: #000000;
     }
-    
-    @media (max-width: 767.98px) {
-      .timeline::after {
-        left: 90px;
-      }
-    
-      .container {
-        width: 100%;
-        padding-left: 120px;
-        padding-right: 30px;
-      }
-    
-      .container.right {
-        left: 0%;
-      }
-    
-      .container.left::after, 
-      .container.right::after {
-        left: 82px;
-      }
-    
-      .container.left::before,
-      .container.right::before {
-        left: 100px;
-        border-color: transparent $tertiary-color transparent transparent;
-      }
-    
-      .container.left .date,
-      .container.right .date {
-        right: auto;
-        left: 15px;
-      }
-    
-      .container.left .icon,
-      .container.right .icon {
-        right: auto;
-        left: 146px;
-      }
-    
-      .container.left .content,
-      .container.right .content {
-        padding: 30px 30px 30px 90px;
-        border-radius: 500px 0 0 500px;
-      }
-    }
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: $tertiary-color;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+
+
+  @media (max-width: 767.98px) {
+
+  }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent $tertiary-color transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+@media screen and (min-width: 1201px) {
+
 }
