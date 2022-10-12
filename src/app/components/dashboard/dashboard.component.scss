@@ -6,6 +6,12 @@
 
 .main-screen{
   background-color: $white-color;
+  #presentation{
+    p{
+    text-justify: inter-word;
+    }
+    
+  }
   #links-bio-cv{
     background-color: $primary-color;
     .card{
