@@ -1,6 +1,7 @@
 @import '/src/styles.scss';
 
 .main-screen{
+  background-color: $primary-color;
   h1{
     padding-left: 1em;
   }
@@ -8,19 +9,18 @@
     cursor: pointer;
     background-color: $secondary-color;
     border-radius: 1.563em;
-    color: $tertiary-color;
     text-decoration: none;
-    .fa-xl{
-    }
+    color: $tertiary-color;
   }
   .cards-list{
     z-index: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(18.75em, 1fr));
     .card{
+      background-color: $white-color;
       flex-basis: 33.333333%;
       border-radius: 40px;
-      box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+      box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.25);
       cursor: pointer;
       transition: 0.4s;
       h2{
@@ -68,14 +68,12 @@
       right: 1em;
       padding: 1em;
       font-size: larger;
-      width: 1.5em;
-      height: 1.5em;
+      width: 3.5em;
+      height: 3.5em;
       display: flex;
       justify-content: center;
       #return-text{
         display: none;
-      }
-      .fa-xl{
       }
     }
     .cards-list {
@@ -89,8 +87,7 @@
       }
       .card:hover {
         transform: scale(0.9, 0.9);
-        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-          -5px -5px 30px 15px rgba(0,0,0,0.22);
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -100,17 +97,13 @@
     a{
       position: absolute;
       top: 1em;
-      right: 1em;
+      right: 2em;
       padding: 1em;
       font-size: larger;
-      width: 1.5em;
-      height: 1.5em;
       display: flex;
       justify-content: center;
       #return-text{
         display: none;
-      }
-      .fa-xl{
       }
     }
     .cards-list {
@@ -124,8 +117,7 @@
       }
       .card:hover {
         transform: scale(0.9, 0.9);
-        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-          -5px -5px 30px 15px rgba(0,0,0,0.22);
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -138,6 +130,9 @@
       right: 2em;
       padding: 1em;
       font-size: larger;
+      .fa-xl{
+        padding-right: 1em;
+      }
     }
     .cards-list {
       width: 100%;
@@ -150,8 +145,7 @@
       }
       .card:hover {
         transform: scale(0.9, 0.9);
-        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-          -5px -5px 30px 15px rgba(0,0,0,0.22);
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -164,6 +158,9 @@
       right: 2em;
       padding: 1em;
       font-size: larger;
+      .fa-xl{
+        padding-right: 1em;
+      }
     }
     .cards-list {
       width: 100%;
@@ -176,8 +173,7 @@
       }
       .card:hover {
         transform: scale(0.9, 0.9);
-        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-          -5px -5px 30px 15px rgba(0,0,0,0.22);
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -187,9 +183,12 @@
     a{
       position: absolute;
       top: 1em;
-      right: 3em;
+      right: 5em;
       padding: 1em;
       font-size: larger;
+      .fa-xl{
+        padding-right: 1em;
+      }
     }
     .cards-list {
       width: 100%;
@@ -202,8 +201,7 @@
       }
       .card:hover {
         transform: scale(0.9, 0.9);
-        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-          -5px -5px 30px 15px rgba(0,0,0,0.22);
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
       }
     }
 
